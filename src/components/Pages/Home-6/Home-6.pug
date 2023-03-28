@@ -1,43 +1,44 @@
 section.home-6 
-	+HomeCate("Trang chủ", "|", "Liên hệ")
+	.shadow-s1
+		+HomeCate("Trang chủ", "|", "Liên hệ")
 
-	.container 
-		.grid.gap-8.mb-20(class="grid-cols-12")
-			div(class="xs:col-span-12 sm:col-span-12 md:col-span-6 lg:col-span-6")
-				h2.font-light.text-36px.uppercase.text-primary.mt-20 liên hệ
-				p.font-normal.text-18px.text-t3.mt-5 Quý khách vui lòng điền thông tin vào mẫu bên dưới và gửi những góp ý, thắc mắc cho SCPC chúng tôi sẽ phản hồi email của Quý Khách trong thời gian sớm nhất.
-				.contact__form
-					.mb-6
-						input(id="base-input" class="border font-normal text-t3 text-18px block w-full p-2.5 mt-5" placeholder="Họ và tên *")
-					.mb-6
-						input(id="base-input" class="font-normal text-t3 text-18px border block w-full p-2.5" placeholder="Số điện thoại *")
-					.mb-6
-						input(id="base-input" class="font-normal text-t3 text-18px border block w-full p-2.5" placeholder="Email *")
-					.mb-6
-						input(id="base-input" class="font-normal text-t3 text-18px border block w-full p-2.5" placeholder="Tiêu đề")
-					.mb-6
-						textarea(id="message" rows="6" class="font-normal text-t3 text-18px block p-2.5 w-full border resize-none" placeholder="Nội dung")
+		.container 
+			.grid.gap-8.mb-20(class="grid-cols-12")
+				div(class="xs:col-span-12 sm:col-span-12 md:col-span-6 lg:col-span-6")
+					h2.font-light.text-36px.uppercase.text-primary.mt-20 liên hệ
+					p.font-normal.text-18px.text-t3.mt-5 Quý khách vui lòng điền thông tin vào mẫu bên dưới và gửi những góp ý, thắc mắc cho SCPC chúng tôi sẽ phản hồi email của Quý Khách trong thời gian sớm nhất.
+					.contact__form
+						.mb-6
+							input(id="base-input" class="border font-normal text-t3 text-18px block w-full p-2.5 mt-5" placeholder="Họ và tên *")
+						.mb-6
+							input(id="base-input" class="font-normal text-t3 text-18px border block w-full p-2.5" placeholder="Số điện thoại *")
+						.mb-6
+							input(id="base-input" class="font-normal text-t3 text-18px border block w-full p-2.5" placeholder="Email *")
+						.mb-6
+							input(id="base-input" class="font-normal text-t3 text-18px border block w-full p-2.5" placeholder="Tiêu đề")
+						.mb-6
+							textarea(id="message" rows="6" class="font-normal text-t3 text-18px block p-2.5 w-full border resize-none" placeholder="Nội dung")
 
-					div.flex.justify-between 
-						.border.rounded-xl.flex.box-captcha
-							input.ml-2(type="checkbox")
-							h5.font-normal.text-16px.text-t3.break-all.ml-5 Tôi không phải là người máy
-							.flex.flex-col.mt-auto
-								img(src='./img/capcha.webp') 
-								a.font-normal.text-8px.text-t6.flex.flex-col.mt-auto(href='#') Bảo mật - Điều khoản
-						.button-send.flex.flex-col.my-auto
-							button.font-normal.text-t2.text-center.bg-primary.rounded-3xl.px-20.py-2 Gửi
-							
+						div.flex.justify-between 
+							.border.rounded-xl.flex.box-captcha
+								input.ml-2(type="checkbox" class="outline-none")
+								h5.font-normal.text-16px.text-t3.break-all.ml-5 Tôi không phải là người máy
+								.flex.flex-col.mt-auto
+									img(src='./img/capcha.webp') 
+									a.font-normal.text-8px.text-t6.flex.flex-col.mt-auto(href='#') Bảo mật - Điều khoản
+							.button-send.flex.flex-col.my-auto
+								button.font-normal.text-t2.text-center.bg-primary.rounded-3xl.px-20.py-2 Gửi
+								
 
-			div.flex.flex-col.mt-auto(class="xs:col-span-12 sm:col-span-12 md:col-span-6 lg:col-span-6")
-				h2.font-semibold.text-36px.uppercase.text-primary TỔNG CÔNG TY VĂN HÓA SÀI GÒN CÔNG TY TNHH MỘT THÀNH VIÊN
-				ul.flex.mt-5
-					li.list-none 
-						i.font-normal.text-18px.text-t3(class="fa-thin fa-location-dot")
-						a.font-normal.text-18px.text-t3.ml-3(href='#') 88 88 Trần Đình Xu, Phường Cô Giang, Quận 1, TP.HCM
-				ul.flex
-					li.list-none
-						i.font-normal.text-18px.text-t3(class="fa-thin fa-phone")
-						a.font-normal.text-18px.text-t3.ml-3(href='#') (028) 383 65 778 - (028)392 06 606 – (028)383 85 269
+				div.flex.flex-col.mt-auto(class="xs:col-span-12 sm:col-span-12 md:col-span-6 lg:col-span-6")
+					h2.font-semibold.text-36px.uppercase.text-primary TỔNG CÔNG TY VĂN HÓA SÀI GÒN CÔNG TY TNHH MỘT THÀNH VIÊN
+					ul.flex.mt-5
+						li.list-none 
+							i.font-normal.text-18px.text-t3(class="fa-thin fa-location-dot")
+							a.font-normal.text-18px.text-t3.ml-3(href='#') 88 88 Trần Đình Xu, Phường Cô Giang, Quận 1, TP.HCM
+					ul.flex
+						li.list-none
+							i.font-normal.text-18px.text-t3(class="fa-thin fa-phone")
+							a.font-normal.text-18px.text-t3.ml-3(href='#') (028) 383 65 778 - (028)392 06 606 – (028)383 85 269
 
-				iframe.mt-5.rounded-xl(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.649936576041!2d106.68778697592768!3d10.761439259468176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f10c2d70ccf%3A0x5dcf18bcfc681a91!2zVOG7lW5nIEPDtG5nIHR5IFbEg24gaG_DoSBTw6BpIEfDsm4gLSBDw7RuZyB0eSBUTkhIIE3hu5l0IHRow6BuaCB2acOqbg!5e0!3m2!1svi!2s!4v1679644063266!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade")
+					iframe.mt-5.rounded-xl(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.649936576041!2d106.68778697592768!3d10.761439259468176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f10c2d70ccf%3A0x5dcf18bcfc681a91!2zVOG7lW5nIEPDtG5nIHR5IFbEg24gaG_DoSBTw6BpIEfDsm4gLSBDw7RuZyB0eSBUTkhIIE3hu5l0IHRow6BuaCB2acOqbg!5e0!3m2!1svi!2s!4v1679644063266!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade")
