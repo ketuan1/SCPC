@@ -1,0 +1,163 @@
+
+.home-1
+	position: relative
+	.bg-home-1
+		position: relative
+		@apply text-center
+	.content-home-1
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		@apply text-center
+
+.home-2
+	position: relative
+	.bg-home-2
+		position: relative
+		@apply text-center
+	.content-home-2
+		position: absolute
+		top: 30%
+		left: 50%
+		transform: translate(-50%, -50%)
+		@apply text-center
+
+.home-3
+	position: relative
+	.bg-home-3
+		position: relative
+	.content-home-3
+		position: absolute
+		top: 75%
+		left: 38%
+		transform: translate(-50%, -50%)
+		@apply text-t2
+		.rotate
+			-moz-transform: translateX(-50%) translateY(-50%) rotate(-90deg)
+			-webkit-transform: translateX(-50%) translateY(-50%) rotate(-90deg)
+			transform: translateX(-50%) translateY(-50%) rotate(-90deg)
+			@apply font-bold text-36px text-t2
+
+.home-4
+	margin-top: 100px
+	.bg-home-4
+		margin-top: 40px
+		padding: 40px
+		.title
+			padding-bottom: 10px
+			border-bottom: 2px solid #e0dada
+			@apply font-bold text-xl text-15
+
+.home-5
+	.swiper
+		width: 100%
+		height: 100%
+		// .swiper-silde
+
+		.swiper-slide img
+			display: block
+			width: 100
+			height: 100%
+			object-fit: cover
+		.card-new-content
+			display: flex
+			flex-direction: column
+			margin-top: auto
+			width: 100%
+			padding-top: 20px
+			.card-new-header
+				@apply text-36px text-t3 font-medium
+			.card-new-desc
+				@apply text-16px text-t3 font-normal
+			.date-card-new
+				@apply text-base text-t9
+
+	.button-next
+		position: absolute
+		left: 100%
+		top: 40%
+		@apply text-t9 text-36px font-light cursor-pointer
+	.button-prev
+		position: absolute
+		right: 100%
+		top: 40%
+		@apply text-t9 text-36px font-light cursor-pointer
+
+.home-6
+	.button-next
+		position: absolute
+		left: 100%
+		top: 20%
+		@apply text-t9 text-36px font-light cursor-pointer
+	.button-prev
+		position: absolute
+		right: 100%
+		top: 20%
+		@apply text-t9 text-36px font-light cursor-pointer
+
+// media responsive
+
+@media ( max-width: 1024px)
+	.content-home-2
+		margin-top: 40px
+	.content-home-2 .btn
+		@apply text-xs px-1 py-1
+
+@media (max-width: 768px)
+	.content-home-1 img
+		width: 50%
+		max-width: 50%
+	.content-home-1 p
+		@apply text-24px flex flex-col break-all mt-auto
+
+	// content-home-2(home-1)
+	.content-home-2
+		margin-top: 20px
+	.content-home-2 h2
+		@apply text-24px
+	.content-home-2 p
+		display: -webkit-box
+		-webkit-box-orient: vertical
+		-webkit-line-clamp: 3
+		overflow: hidden
+
+	.home-3
+		.header-home-3
+			@apply text-24px
+	.home-4 h2
+		@apply text-24px
+
+@media (max-width: 576px)
+	.content-home-2 .btn
+		display: none
+	.home-3
+		.header-home-3
+			@apply text-24px
+		.content-home-3
+			.desc
+				display: -webkit-box
+				-webkit-box-orient: vertical
+				-webkit-line-clamp: 4
+				overflow: hidden
+			.rotate
+				margin-left: 40px
+	.home-4 h2
+		@apply text-24px
+
+	.home-5
+		.card-new-header
+			display: -webkit-box
+			-webkit-box-orient: vertical
+			-webkit-line-clamp: 2
+			overflow: hidden
+		.card-new-desc
+			display: -webkit-box
+			-webkit-box-orient: vertical
+			-webkit-line-clamp: 4
+			overflow: hidden
+
+@media (max-width: 375px)
+	.content-home-3
+		.rotate
+			margin-left: 20px

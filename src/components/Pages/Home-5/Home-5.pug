@@ -1,0 +1,33 @@
+section.home-1
+	img(src='./img/bg-cbinfo.webp')
+	+HomeCate("Trang chủ", "|", "Công bố thông tin")
+
+.container
+	.flex.flex-col.mx-auto.text-center.pt-20
+		h2.font-light.text-36px.uppercase.text-primary Công bố thông tin
+		ul.flex.justify-content.mx-auto.space-x-6.font-medium.text-xl.text-t3.mt-7
+			li.list-none.text-primary
+				a Tài chính
+			li.list-none
+				a Kinh doanh
+			li.list-none 
+				a Lao động
+	.grid.gap-10.pt-20(class="grid-cols-12")
+		div(class="xs:col-span-12 sm:col-span-6 md:col-span-4 lg:col-span-4")
+			.flex.cursor-pointer.home-info
+				i.text-child.font-light.text-40px.text-primary(class="fa-sharp fa-regular fa-file-chart-column")
+				.text-child.flex.flex-col.mx-auto.px-8.py-0
+					p.text-child.font-normal.text-sm.text-t6 10.11.2022
+					h5.text-child.font-bold.text-lg.text-t3 Báo cáo tài chính 6 tháng đầu năm 2022 Công ty Mẹ
+
+		+ListCbInformation("fa-sharp fa-regular fa-file-chart-column", "10.11.2022", "Báo cáo tài chính đã kiểm toán  hợp nhất năm 2020")
+		+ListCbInformation("fa-sharp fa-regular fa-file-chart-column", "10.11.2022", "Báo cáo tài chính đã kiểm toán hợp nhất năm 2020")
+		+ListCbInformation("fa-sharp fa-regular fa-file-chart-column", "10.11.2022", "Báo Cáo Đánh Giá Về Kết Quả Thực Hiện Kế Hoạch Sản Xuất Kinh Doanh Năm 2020")
+		+ListCbInformation("fa-sharp fa-regular fa-file-chart-column", "10.11.2022", "Báo Cáo Đánh Giá Về Kết Quả Thực Hiện Kế Hoạch Sản Xuất Kinh Doanh Năm 2020")
+		+ListCbInformation("fa-sharp fa-regular fa-file-chart-column", "10.11.2022", "Báo cáo thực trạng quản trị và cơ cấu tổ chức của doanh nghiệp năm 2020")
+		+ListCbInformation("fa-sharp fa-regular fa-file-chart-column", "10.11.2022", "Báo Cáo Đánh Giá Về Kết Quả Thực Hiện Kế Hoạch Sản Xuất Kinh Doanh Năm 2020")
+		+ListCbInformation("fa-sharp fa-regular fa-file-chart-column", "10.11.2022", "Báo Cáo Đánh Giá Về Kết Quả Thực Hiện Kế Hoạch Sản Xuất Kinh Doanh Năm 2020")
+		+ListCbInformation("fa-sharp fa-regular fa-file-chart-column", "10.11.2022", "Báo cáo tài chính đã kiểm toán hợp nhất năm 2020")
+
+	//- mixins pagination
+	+ListPagination("1","2","3","4","5")

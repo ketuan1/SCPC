@@ -1,0 +1,67 @@
+section.bg-new
+	img(src='./img/TinTuc/bg-tintuc.webp')
+
+.home-br
+	.container
+		nav.flex(aria-label="Breadcrumb")
+			ol.inline-flex.items-center.space-x-1
+				li
+					.flex.items-center
+						a(href='#').font-normal.text-16px.text-t6.mr-4 Trang Chủ
+				li
+					.flex.items-center.font-normal.text-16px.text-t6 |
+						span.ml-4.font-normal.text-16px.text-t6 Tin Tức
+
+section.container.mt-5 
+	.flex.flex-col.mx-auto.text-center
+		h2.header-new.font-light.text-38px.text-primary.uppercase Tin Tức
+		ul.flex.justify-content.mx-auto.space-x-6.font-bold.text-xl.text-t3.mt-7
+			li.list-none.text-primary
+				a Tất cả
+			li.list-none
+				a Tin nổi bật
+			li.list-none 
+				a Tin công ty
+			li.list-none
+				a Thành viên
+
+	section.home-1
+		.grid.gap-6.mt-10(class='grid-cols-12')
+			div.bg-linear_primary.ts(class="xs:col-span-12 sm:col-span-6 md:col-span-6 lg:col-span-8")
+				img(src='./img/TinTuc/tintuc-1.webp' alt='tintuc1')
+				.new-content
+					h1.new-header NXB Trẻ ra loạt sách mới mừng sinh nhật tuổi 30
+					p.new-desc  Nhân kỷ niệm 30 năm thành lập, NXB Trẻ ra mắt nhiều sách mới của các tác giả uy tín như Nguyên Ngọc, Hoàng Phủ Ngọc Tường... cùng tuyển tập các cây bút, nhà văn trẻ được yêu thích
+					ol.date-content.inline-flex.items-center.space-x-1
+						li
+							.flex.items-center
+								a(href='#') Thành viên
+						li
+							.flex.items-center |
+								span 0.3.11.202
+
+			div(class="xs:col-span-12 sm:col-span-6 md:col-span-6 lg:col-span-4")
+				img(src='./img/TinTuc/tintuc-2.webp')
+				.content-new
+					h1.font-medium.text-2xl.text-primary.mt-5 NXB Trẻ ra loạt sách mới mừng sinh nhật tuổi 30
+					p.font-normal.text-base.text-t3.mt-4 Nhân kỷ niệm 30 năm thành lập, NXB Trẻ ra mắt nhiều sách mới của các tác giả uy tín như Nguyên Ngọc, Hoàng Phủ Ngọc Tường... cùng tuyển tập các cây bút, nhà văn trẻ được yêu thích Nhân kỷ niệm 30 năm thành lập, NXB Trẻ ra mắt nhiều sách mới của các tác giả uy tín như Nguyên Ngọc, Hoàng Phủ Ngọc Tường... cùng tuyển tập các cây bút, nhà văn trẻ được 
+					.date-content.font-normal.text-base.text-t9.mt-2
+						ol.inline-flex.items-center.space-x-1
+							li
+								.flex.items-center.mr-2
+									a(href='#') Thành viên
+							li
+								.flex.items-center |
+									span.ml-2 03.11.2022
+
+	section.home-2.mt-7
+		.grid.gap-2(class="grid-cols-12")
+			+ListCardItem("./img/TinTuc/tintuc-3.webp", "Tổng Cty Văn hoá Sài Gòn phấn đấu trở thành DN kinh tế văn hóa lớn mạnh", "(HCM Cityweb) – Sáng 10-8, Trưởng ban Tổ chức Thành uỷ Nguyễn Thị Thu Hà và Phó Chủ tịch UBND TP HCM Hứa Ngọc Thuận đã tham dự Đại hội Đảng bộ Tổng công ty Văn hóa Sài Gòn (VHSG) nhiệm kỳ II (2010 – 2015).")
+			+ListCardItem("./img/TinTuc/tintuc-4.webp", "Xây dựng Nhà máy in chất lượng cao", " TT - Ngày 4-12, Công ty cổ phần In số 7 (thuộc Tổng công ty Văn hóa Sài Gòn) đã khởi công xây dựng nhà máy in chất lượng cao tại Khu công nghiệp Tân Tạo (Bình Tân, TP.HCM) với tổng số vốn hơn 100 tỉ đồng.")
+			+ListCardItem("./img/TinTuc/tintuc-5.webp", "Công ty FAHASA tổ chức “Tuần lễ triển lãm sách Pháp””", "(NLĐ) - Công ty FAHASA tổ chức “Tuần lễ triển lãm sách Pháp” nhằm đáp ứng nhu cầu của độc giả yêu sách tiếng Pháp đặc biệt là các học sinh, sinh viên, học viên của các trung tâm Pháp ngữ.")
+			+ListCardItem("./img/TinTuc/tintuc-6.webp", "Ông Lê Hoàng nhận giải thưởng “Thành tựu trọn đời trong xuất bản”", "TT - Tối 9-7, ủy ban tổ chức của Hội thảo xuất bản châu Á thường niên lần 4 (APC 4) đã trao tặng ông Lê Hoàng, chủ tịch hội đồng quản trị Tổng công ty Văn hóa Sài Gòn, giải thưởng “Thành tựu trọn đời trong xuất bản”.")
+			+ListCardItem("./img/TinTuc/tintuc-7.webp", "Tổng Cty Văn hoá Sài Gòn phấn đấu trở thành DN kinh tế văn hóa lớn mạnh", "(SGGP) - Nhà nghiên cứu Mộc Quế (ảnh) là chuyên gia tư vấn doanh nghiệp, gần đây ông chuyển sang nghiên cứu và giảng dạy về văn hóa cơ sở, văn hóa doanh nghiệp, văn hóa gia đình. Nhân Ngày Gia đình Việt Nam (28-6)")
+			+ListCardItem("./img/TinTuc/tintuc-8.webp", "NXB Trẻ ra loạt sách mới mừng sinh nhật tuổi 30", "Nhân kỷ niệm 30 năm thành lập, NXB Trẻ ra mắt nhiều sách mới của các tác giả uy tín như Nguyên Ngọc, Hoàng Phủ Ngọc Tường... cùng tuyển tập các cây bút, nhà văn trẻ được yêu thích Nhân kỷ niệm 30 năm thành lập, ")
+
+	//- pagination
+	+ListPagination("1", "2", "3", "4", "5")

@@ -1,0 +1,166 @@
+//- //home list cate
+mixin HomeCate(header, vt, cate)
+	.home-br
+		.container
+			nav.flex(aria-label="Breadcrumb")
+				ol.inline-flex.items-center.space-x-1
+					li
+						.flex.items-center
+							a(href='#').font-normal.text-16px.text-t6.mr-4= header
+					li
+						.flex.items-center.font-normal.text-16px.text-t6= vt
+							span.ml-4.font-normal.text-16px.text-t6= cate 
+
+
+//- home-4(in page Home-1) List CB information
+mixin ListInformationHome-1(icon, date, title)
+	div()
+	.flex
+		i.font-light.text-40px.text-primary(class= icon)
+		.flex.flex-col.mx-auto.px-9.py-0
+			p.font-normal.text-sm.text-t6= date
+			h5.font-bold.text-lg.text-t3= title
+
+//- home-1 listCardNew(swiper)
+mixin ListCardNewHome-1(image, header, desc)
+	.swiper-slide.flex.flex-col.h-full
+		.card-new-content
+			img(src= image)
+			h2.card-new-header.mt-5= header
+			p.card-new-desc.pt-5= desc
+			ol.date-card-new.inline-flex.items-center.space-x-1.text-normal.mt-3.h-full
+				li
+					.flex.items-center
+						a(href='#') Thành viên
+				li
+					.flex.items-center.mr-2 |
+						span.ml-2 0.3.11.202
+
+
+//- //card new content
+mixin ListCardItem(image, header, desc)
+	div(class="xs:col-span-6 sm:col-span-6 md:col-span-6 lg:col-span-4")
+		.card-new-content
+			img(src= image)
+			h2.card-new-header.font-medium.mt-5= header
+			p.card-new-desc.font-normal.pt-5= desc
+			ol.date-card-new.inline-flex.items-center.space-x-1.text-normal.mt-3.h-full
+				li
+					.flex.items-center
+						a(href='#') Thành viên
+				li
+					.flex.items-center.mr-2 |
+						span.ml-2 0.3.11.202
+
+
+//- Card related new(new ct)
+mixin ListRelatedNew(image, header, member, vt, date)
+	.flex.mt-5
+		img(src= image)
+		.flex.flex-col.mx-auto.ml-5
+			h4.font-bold.text-18px.text-t3.mb-1= header
+			ol.font-normal.text-base.text-t9.inline-flex.items-center.space-x-1
+				li
+					.flex.items-center
+						a(href='#')= member
+				li
+					.flex.items-center= vt
+						span.ml-2= date
+
+//- page cong bo information
+mixin ListCbInformation(icon, date, title)
+	div(class="xs:col-span-12 sm:col-span-6 md:col-span-4 lg:col-span-4")
+		.flex
+			i.font-light.text-40px.text-primary(class= icon)
+			.flex.flex-col.mx-auto.px-9.py-0
+				p.font-normal.text-sm.text-t6= date
+				h5.font-bold.text-lg.text-t3= title
+
+//- page card LVHD CT
+mixin ListCardHome3(image, title)
+	.flex.flex-col.h-full(class='xs:col-span-6 sm:col-span-6 md:col-span-4 lg:col-span-4')
+		img.cursor-pointer.js-img-thumb(src= image)
+		h3.font-light.text-24px.text-primary.uppercase.mt-5.header-home-3= title
+
+
+//- page content LVHD DS
+mixin ListContentHome3DS(image, header, desc, btn)
+	div.mt-10.mb-20(class="xs:col-span-12 sm:col-span-4 md:col-span-4 lg:col-span-6")
+		.lv-main.w-full.h-full.flex.flex-col.mx-auto.relative
+			.lv-bg.bg-bg1.w-full.h-full
+			img(src= image class='lv-mg')
+
+	div.flex.flex-col.my-auto(class="xs:col-span-12 sm:col-span-8 md:col-span-8 lg:col-span-6")
+		h2.font-light.text-32px.uppercase.text-primary= header
+		p.font-light.text-18px.text-t3.break-all.mt-5= desc
+		.btn.flex.mt-5
+			.bg-t2.border.border-full.flex.rounded-full.shadow-s3
+				button.text-normal.text-xl.text-t2.bg-primary.px-10.py-3.rounded-full.shadow-s3= btn
+				button.px-5.py-3
+					i.text-primary.font-light.text-xl(class="fa-thin fa-plus")
+		
+
+//- page content LVHD DS Effect
+mixin ListContentHome3DSEffect(header, desc, btn, image)
+	div.flex.flex-col.my-auto(class="xs:col-span-12 sm:col-span-8 md:col-span-8 lg:col-span-6")
+		h2.font-light.text-32px.uppercase.text-t2= header
+		p.font-light.text-18px.text-t2.break-all.mt-5= desc
+		.btn.flex.mt-5
+			.bg-t2.border.border-full.flex.rounded-full.shadow-s3
+				button.text-normal.text-xl.text-t2.bg-primary.px-10.py-3.rounded-full.shadow-s3= btn
+				button.px-5.py-3
+					i.text-primary.font-light.text-xl(class="fa-thin fa-plus")
+
+	div.mt-10.mb-20(class="xs:col-span-12 sm:col-span-4 md:col-span-4 lg:col-span-6")
+		.lv-main.w-full.h-full.flex.flex-col.my-auto.relative
+			.bg-primary.w-full.h-full.lv-bg
+			img(src= image class='lv-mg')
+
+
+//- card Introduce Home-2
+mixin ListCardHome-2(desc, year)
+	.swiper-slide.flex.flex-col.h-full
+		.circle-top
+		.swiper-border
+			p.font-light.text-base.mb-5.overflow-auto.h-36.max-h-36.ml-5.srcoll-bar= desc
+		.circle-bottom
+		.stack
+			.stack__item.bg-primary.font-bold.text-24px.text-t2.mt-auto= year
+
+
+//- category Introduce Home-2
+mixin ListCateIntroduceHome-2(icon, title, desc)
+	.flex.mt-5
+		.text-36px
+			i.text-t2.bg-primary.rounded-full.py-7.px-7.mt-7(class= icon)
+		.item.flex.flex-col.h-full.pl-5
+			h3.font-normal.text-32px.text-primary= title
+			p.font-light.text-t3.text-16px.break-all.mt-5= desc 
+
+
+//- counter home-2
+mixin ListCounterHome-2(number, title)
+	div.flex.flex-col.mt-auto(class="xs:col-span-12 sm:col-span-12 md:col-span-4 lg:col-span-4")
+		h1.font-bold.text-6xl.uppercase.text-t2.text-center.mt-12
+			span.counter.px-5.py-5.rounded-full.bg-primary= number 
+		p.text-center.flex.flex-col.h-full.font-bold.text-xl.text-t2.mt-10.mb-10= title 
+
+
+//- list card brand cty thanh vien
+
+mixin ListCardMemberHom-2(image)
+	.swiper-slide.flex.flex-col.h-full.my-auto
+		img.mx-auto(src= image)
+
+
+
+//- pagination
+mixin ListPagination(number1, number2, number3, number4, number5)
+	section.card-pagination.font-bold.pt-20.pb-20
+		.text-center.mt-7
+			a(href='#').inline-flex.items-center.px-4.py-2.ml-3.text-white.bg-primary.border.rounded-5px= number1
+			a(href='#').inline-flex.items-center.px-4.py-2.ml-3.border.rounded-5px= number2
+			a(href='#').inline-flex.items-center.px-4.py-2.ml-3.border.rounded-5px= number3
+			a(href='#').inline-flex.items-center.px-4.py-2.ml-3.border.rounded-5px= number4
+			a(href='#').inline-flex.items-center.px-4.py-2.ml-3.border.rounded-5px= number5
+

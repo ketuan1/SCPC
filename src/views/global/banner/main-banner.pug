@@ -1,0 +1,11 @@
+section#main-banner
+	.main-banner.h-full.relative
+		.swiper
+			.swiper-wrapper
+				-for(i=0;i<5;i++)
+					.swiper-slide.relative 
+						.img.relative.transition-all.duration-500
+							a
+								img(class='lg:block hidden' loading="lazy" src="./img/banner/main.webp")
+								img(class='lg:hidden block' loading="lazy" src="./img/banner/main.webp")
+		.swiper-pagination

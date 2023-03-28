@@ -1,0 +1,115 @@
+//- LVHD-CT
+section.home-3
+	+HomeCate("Trang chủ", "|", "Lĩnh vực hoạt động")
+	.sa
+	.bg-f5.w-full
+		.container
+			.grid.gap-6.mb-10.w-full(class="grid-cols-12")
+				div.mt-20(class="xs:col-span-12 sm:col-span-12 md:col-span-6 lg:col-span-6")
+					h2.font-light.text-36px.text-primary.uppercase In ấn
+					p.font-light.text-18px.text-t3.mt-5 Trong lĩnh vực in ấn và bao bì, từ lâu Tổng Công Ty Văn hóa Sài Gòn đã là nhà cung cấp chuyên nghiệp và uy tín. Khách hàng có nhu cầu đến với Tổng Công Ty Văn Hóa Sài Gòn sẽ có nhiều cơ hội chọn lựa, hợp tác cùng 8 Công ty chuyên về gia công in ấn và chế bản với đội ngũ công nhân kỹ thuật chuyên nghiệp, các thiết bị chế bản và in ấn hiện đại, hệ thống máy xuất phim, máy in offset nhiều màu của Heidelberg và Komori, máy in flexo 6 màu của Aquaflex và công nghệ gia công hoàn chỉnh sau in …cho phép in các sản phẩm đẹp, nhiều kích cỡ; hệ thống máy xuất kẽm CTP Suprasetter 105 giúp nâng cao chất lượng và giảm thời gian thực hiện sản phẩm, đồng thời tiết giảm chi phí từ 10 – 15% cho khách hàng so với công nghệ xuất phim truyền thống trước đây.
+					p.font-light.text-18px.text-t3.mt-5 Trong lĩnh vực in ấn và bao bì, từ lâu Tổng Công Ty Văn hóa Sài Gòn đã là nhà cung cấp chuyên nghiệp và uy tín. Khách hàng có nhu cầu đến với Tổng Công Ty Văn Hóa Sài Gòn sẽ có nhiều cơ hội chọn lựa, hợp tác cùng 8 Công ty chuyên về gia công in ấn và chế bản với đội ngũ công nhân kỹ thuật chuyên nghiệp, các thiết bị chế bản và in ấn hiện đại, hệ thống máy xuất phim, máy in offset nhiều màu của Heidelberg và Komori, 
+
+				div.mt-20.mb-10(class="xs:col-span-12 sm:col-span-12 md:col-span-6 lg:col-span-6")
+					.swiper.mySwiper2(style='--swiper-pagination-color: #fff" class="swiper mySwiper2')
+						.swiper-wrapper
+							.swiper-slide
+								img(src='./img/Home-3/lv-1.webp')
+							.swiper-slide
+								img(src='./img/Home-3/lv-3.webp')
+							.swiper-slide
+								img(src='./img/Home-3/lv-4.webp')
+							.swiper-slide
+								img(src='./img/Home-3/lv-4.webp')
+							.swiper-slide
+								img(src='./img/Home-3/lv-4.webp')
+
+					.relative.text-center.m-5.cursor-pointer
+						.swiper.mySwiper(thumbsslider='')
+							.swiper-wrapper
+								.swiper-slide
+									img(src='./img/Home-3/lv-2.webp')
+								.swiper-slide
+									img(src='./img/Home-3/lv-3.webp')
+								.swiper-slide
+									img(src='./img/Home-3/lv-4.webp')
+								.swiper-slide
+									img(src='./img/Home-3/lv-4.webp')
+								.swiper-slide
+									img(src='./img/Home-3/lv-4.webp')
+
+						.button-next
+							i(class="fa-light fa-angle-right")
+						.button-prev
+							i(class="fa-light fa-angle-left")
+								
+section.home-4-card
+	.container
+		.grid.gap-8.mt-12.pb-20(class='grid-cols-12')
+			+ListCardHome3("./img/Home-3/lv-6.webp", "Công ty in văn hóa sài gòn")
+
+			+ListCardHome3("./img/Home-3/lv-7.webp", "CÔNG TY CỔ PHẦN IN SỐ 4")
+
+			+ListCardHome3("./img/Home-3/lv-8.webp", "CÔNG TY CỔ PHẦN IN SỐ 7")
+
+			+ListCardHome3("./img/Home-3/lv-9.webp", "CÔNG TY CỔ PHẦN IN VƯỜN LÀI")
+
+			+ListCardHome3("./img/Home-3/lv-11.webp", "CÔNG TY CỔ PHẦN IN GIA ĐỊNH")
+
+			+ListCardHome3("./img/Home-3/lv-10.webp", "CÔNG TY CỔ PHẦN BAO BÌ VAFACO")
+
+		//- box modal
+		.modal.js-modal
+			.flex.flex-col-mx-auto.modal-body
+				span(class="fa fa-times-circle js-close")
+				img.rounded-3xl.modal-image.js-modal-image(src='./img/Home-3/lv-6.webp')
+				.modal-content.flex.flex-col.h-full.ml-5
+					h2.font-light.text-36px.uppercase.text-primary CÔNG TY CỔ PHẦN BAO BÌ VAFACO
+					.overflow-auto.h-40.srcoll-bar
+						p.font-light.text-18px.text-t3 Với tiêu chí kinh doanh linh hoạt, uy tín, quan tâm đến chất lượng sản phẩm, giá cả hợp lý, cung cách phục vụ khách hàng ân cần, tận tình và chu đáo
+							span.text-primary “Khách hàng là Ân nhân – Uy tín là Chất lượng” 
+						p.font-light.text-18px.text-t3.mt-5 Định hướng phát triển của Công ty trong thời gian tới là sản xuất bao bì nhựa tự hủy sinh học, góp phần tạo ra sản phẩm thân thiện môi trường. Thị trường tiêu thụ sản phẩm của Công ty là thị trường trong và ngoài nước 
+					.flex
+						p.font-normal.text-xl.text-primary Đi đến website
+						i.font-normal.text-xl.text-primary.ml-5.mt-auto(class="fa-thin fa-plus")
+
+script(src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js")
+script.
+	var swiper = new Swiper(".mySwiper", {
+		slidesPerView: 4,
+		freeMode: true,
+		watchSlidesProgress: true,
+		navigation: {
+			nextEl: ".button-next",
+			prevEl: ".button-prev",
+		}
+	});
+	var swiper2 = new Swiper(".mySwiper2", {
+		spaceBetween: 10,
+		navigation: {
+			nextEl: ".button-next",
+			prevEl: ".button-prev",
+		},
+		thumbs: {
+			swiper: swiper,
+		},
+	});
+
+script.
+	const modalImage = document.querySelector(".js-modal-image");
+	const modalOpen = document.querySelector(".js-modal");
+	const modalClose = document.querySelector(".js-close");
+	const imageList = document.querySelectorAll(".js-img-thumb");
+	const listtitle = document.querySelectorAll(".ss");
+
+	Array.from(imageList).forEach(item => {
+	item.addEventListener("click", e => {
+		modalOpen.classList.add("open");
+		modalImage.src = e.target.src;
+		
+	});
+	});
+
+	modalClose.addEventListener("click", () => {
+	modalOpen.classList.remove("open");
+	});
