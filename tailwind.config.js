@@ -321,5 +321,6 @@ module.exports = {
 	plugins: [
 		require("@tailwindcss/line-clamp"),
 		require("tailwindcss-textshadow"),
+		require('@shrutibalasa/tailwind-grid-auto-fit'),
 	],
 };
